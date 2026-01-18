@@ -7,3 +7,14 @@
 
 An independent, experimental and personal implementation of Process Freeze/Unfreeze/Migration inspired by [CRIU](https://github.com/checkpoint-restore/criu) (Checkpoint/Restore in Userspace).
 
+### TODO
+
+- Use CRIU (and if unit tests available) to see commands and effects and try to implement them.
+- Investigate the entire process creation flow in the kernel.
+- Investigate use of mmap to create memory regions for a new process.
+- Dump register values (ptrace ?)
+- Dump memory mappings (ptrace ?)
+- Handling library changes and how does CRIU handle that ?
+  - What if the library is different now and the RIP points to a code in the library mapping ?
+- Move to multithreaded process and dump threads and thread states ?
+- Dump socket states ?
