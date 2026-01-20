@@ -10,6 +10,7 @@ An independent, experimental and personal implementation of Process Freeze/Unfre
 ### TODO
 
 - Use CRIU (and if unit tests available) to see commands and effects and try to implement them.
+    - Checkout [ZDTM test suite](https://criu.org/ZDTM_test_suite) and incrementally implement features to pass that.
 - Investigate the entire process creation flow in the kernel.
 - Investigate use of mmap to create memory regions for a new process.
 - Dump register values (ptrace ?)
